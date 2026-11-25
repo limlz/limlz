@@ -6,9 +6,16 @@ I work mostly in **C++** and **Python**, and most of what I build is performance
 
 ### What I'm building
 
-**SGGotWhat** *(private)* - a Singapore events and hidden-gems recommendation app. I built the ranking engine and implemented k-means clustering to derive user personas, running against EventFinda, OneMap and LTA DataMall.
+**SGGotWhat?** - a multi-trimester team app that surfaces events and lesser-known places around Singapore. C++20, running on phones as WebAssembly, with Firebase for sign-in, data and push notifications. *(private repo)*
 
-**Capstone: high-performance itinerary engine** *(private)* - four C++ subsystems behind a mobile itinerary planner. A time-dependent multimodal transit router (RAPTOR-style) over LTA DataMall timetables, an itinerary optimizer solving the Orienteering Problem with Time Windows, an R-tree spatiotemporal index with validity intervals, and an anomaly-detection pass over user-submitted listings.
+My work on it:
+
+- **Recommendation engine** - seeded k-means persona clustering, boosting spots that similar users engaged with, with a reserved share of results for exploration picks from nearby clusters. Precision@10 up 11% over the previous version on 10,000 synthetic users.
+- **Itinerary solver** - exact quickest visit order via Held-Karp dynamic programming up to 12 stops, over real walking, bus and MRT times from OneMap, plus a day planner.
+- **Ranking and spatial search** - deterministic weighted scoring with incremental re-ranking. Nearby search answers in 0.4 ms (p95) across 10,010 spots on a Pixel 9a.
+- **Server recompute** - clustering and trending moved to a scheduled job on the team's Linux server, publishing one model to Firestore for every client.
+- **Submission validation** - GPS checks against Singapore's land outline, rate limits and account-age checks on user-submitted spots.
+- **Tooling** - CMake setup, benchmarks, determinism tests, Discord build notifications.
 
 ### Public work
 
