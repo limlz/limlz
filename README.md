@@ -1,6 +1,6 @@
 ## Lim Liang Zhou
 
-Computer Science student at SIT-DigiPen Singapore, in the Real-Time Interactive Simulation programme. Looking for a software engineering internship in 2028.
+Computer Science student at SIT-DigiPen Singapore, in the Real-Time Interactive Simulation programme. Looking for a 12-month software engineering internship, available May 2028 to May 2029.
 
 I work mostly in **C++** and **Python**, and most of what I build is performance-sensitive: routing, ranking, simulation, rendering.
 
