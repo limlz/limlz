@@ -6,7 +6,7 @@ I work mostly in **C++** and **Python**, and most of what I build is performance
 
 ### What I'm building
 
-**Jemz** (formerly SGGotWhat?) - a multi-trimester team app that surfaces events and lesser-known places around Singapore. C++20, running on phones as WebAssembly, with Firebase for sign-in, data and push notifications. *(private repo)*
+**Jemz** (formerly SGGotWhat?) - a multi-trimester team app that surfaces events and lesser-known places around Singapore. C++20, running on phones as WebAssembly, with Firebase for sign-in, data and push notifications. *(team repo is private; my modules are in [jemz-modules](https://github.com/limlz/jemz-modules))*
 
 My work on it:
 
@@ -21,6 +21,7 @@ My work on it:
 
 | Repo | What it is |
 | --- | --- |
+| [jemz-modules](https://github.com/limlz/jemz-modules) | **My modules from Jemz** - seeded k-means personas, the collaborative boost, sliced recompute, the Held-Karp itinerary solver and Singapore geo checks, with 39 tests. Builds on its own. |
 | [EarlyBirdGetsDaWorm](https://github.com/limlz/EarlyBirdGetsDaWorm) | **Echoes of the Ward** - psychological horror game in C++ on AlphaEngine. Anomaly-hunting in a hospital ward with a boss encounter. I wrote the game state manager, config hot-reload and dynamic lighting. |
 | [Game_Project](https://github.com/limlz/Game_Project) | **WEWASHPl8** - dishwashing arcade game in C with CProcessing. I wrote the bubble particle system, the roomba and dirt entities, and the money, sounds and debug code. |
 
